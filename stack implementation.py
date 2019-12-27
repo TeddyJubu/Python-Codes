@@ -3,6 +3,7 @@ x = " "
 stack = []
 while x != exit:
     x = input("->")
+    x = x.lower()
     if x[0:4]=="push":
         stack.append(x[5:])
         print(stack)
